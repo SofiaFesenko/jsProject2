@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+}
+
+.wrapper {
+    max-width: 946px;
+    margin: auto;
+}
+
+.header {
+    background-image: url(./img/headerBackground.png);
+    background-size: cover;
+    height: 65vh;
+}
+
+.header-content {
+    padding-top: 60px;
+}
+
+.header-logo {
+    height: 200px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(136.05deg, rgba(196, 196, 196, 0.03) 7.362%,rgba(196, 196, 196, 0) 89.206%);
+    position: absolute;
+    border-radius: 0 0 200px 0;
+}
+
+.header-title {
+    font-weight: 900;
+    font-size: 50px;
+    color: #DC56C5;
+    text-align: center;
+}
+
+.header-input-block {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 160px;
+}
+
+
+.headerInp {
+    width: 270px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 9px 25px;
+    border: none;
+    color: rgb(147, 147, 147);
+}
+
+.input-position-block {
+    position: relative;
+    width: min-content;
+}
+
+.input-search-svg {
+    position: absolute;
+    bottom: 12px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.headerInp:focus {
+    outline: none;
+}
+
+.film {
+    width: min-content;
+}
+
+.film-img {
+    width: 180px;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.film-info {
+    text-align: center;
+}
+
+.film-title {
+    color: rgb(220, 86, 197);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.film-date {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.film-place {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.films-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 70px;
+}
+
+footer {
+    padding: 79px 0 19px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination > span {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.footer-info {
+    color: rgb(147, 147, 147);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.pagination > span:hover {
+    color: rgb(220, 86, 197);
+    border: 1px solid rgb(220, 86, 197);
+    border-radius: 10px 0px 10px 0px;
+}
+
+
+
+
+/* MODAL */
+
+
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.modal {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: max-content;
+}
+
+.modal-content {
+    border-radius: 300px 0px 300px 0px;
+    background: rgb(255, 242, 253);
+    padding: 30px;
+}
+
+.modal-close-btn {
+    text-align: right;
+    font-size: 25px;
+    color: #4C00FE;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal-up-image {
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-radius: 80px;
+    margin: auto;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+.modal-info-image {
+    width: 360px;
+    object-fit: cover;
+}
+
+.modal-block-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.modal-info-title {
+    margin-bottom: 7px;
+    color: rgb(220, 86, 197);
+}
+
+.modal-info-price-text {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-info-text {
+    margin-bottom: 20px;
+}
+
+.modal-buy {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 9px 11px;
+    background: rgb(76, 0, 254);
+    
+    border: none;
+    cursor: pointer;
+}
+
+.modal-buy > a {
+    text-decoration: none;
+    color: white;
+}
+
+.modal-more-info-btn {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(76, 0, 254);
+    padding: 10px 15px;
+    color: rgb(76, 0, 254);
+    font-weight: 500;
+    background-color: rgba(46, 139, 86, 0);
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}

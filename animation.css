@@ -1,0 +1,75 @@
+.header-logo {
+    animation-name: headerLogo;
+    animation-duration: 1s;
+}
+
+.header-title {
+    animation-name: headerTitle;
+    animation-duration: 1s;
+}
+
+.input-position-block {
+    animation-name: headerSearch;
+    animation-duration: 1s;
+}
+
+.header-choose-inp {
+    animation-name: headerChoose;
+    animation-duration: 1s;
+}
+
+@keyframes headerLogo {
+    from {
+        opacity: 0.5;
+        position: absolute;
+        left: -5%;
+    }
+    to {
+        opacity: 1;
+        position: absolute;
+        left: 0;
+    }
+}
+
+@keyframes headerTitle {
+    from {
+        opacity: 0;
+        position: absolute;
+        right: -5%;
+    }
+    to {
+        opacity: 1;
+        position: absolute;
+        right: 34%;
+    }
+}
+
+@keyframes headerSearch {
+    from {
+        top: 333px;
+        opacity: 0;
+        position: absolute;
+        left: -5%;
+    }
+    to {
+        top: 333px;
+        opacity: 1;
+        position: absolute;
+        left: 34%;
+    }
+}
+
+@keyframes headerChoose {
+    from {
+        top: 333px;
+        opacity: 0;
+        position: absolute;
+        right: -5%;
+    }
+    to {
+        top: 333px;
+        opacity: 1;
+        position: absolute;
+        right: 34%;
+    }
+}
